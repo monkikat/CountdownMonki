@@ -35,6 +35,22 @@ export default {
       fontFamily: {
         primary: ["Nunito"],
       },
+
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "30%, 50%, 70%": {
+            transform: "rotate(-30deg)",
+          },
+          "20%, 40%, 60%, 80%": {
+            transform: "rotate(30deg)",
+          },
+        },
+      },
+
+      animation: {
+        wiggle: "wiggle 0.8s forwards ease-in-out",
+      },
     },
   },
   plugins: [],

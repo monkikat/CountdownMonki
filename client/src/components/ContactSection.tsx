@@ -13,18 +13,21 @@ const ContactSection = () => {
   };
   
   return (
-    <div className="flex-1 h-fit border justify-between space-y-4 border-white bg-white rounded-xl shadow-lg p-10">
-      <p className="flex text-balance font-bold text-xl">
-        Looking for a customized countdown page?</p>
+    <>
+      <div className="flex-1 h-fit border justify-between space-y-4 border-white bg-white rounded-xl shadow-lg p-10
+        transition hover:scale-105">
+        <p className="flex text-balance font-bold text-xl">
+          Looking for a customized countdown page?</p>
 
-      <p className="flex text-balance">
-        If you need a countdown page designed for your event, reach out to me and I can make it happen. </p>
+        <p className="flex text-balance">
+          If you need a countdown page designed for your event, reach out to me and I can make it happen. </p>
 
-      <button className="flex items-center px-8 py-2 bg-primary-300 rounded-xl"
-      onClick={toggleContactCard}>
-        Request Services
-      </button>
-
+        <button className="flex items-center px-8 py-2 bg-primary-300 rounded-xl
+          transition hover:scale-105"
+        onClick={toggleContactCard}>
+          Request Services
+        </button>
+      </div>
       {
         showContactCard && (
           <div className='fixed flex h-full items-center justify-center inset-0 bg-primary-900 bg-opacity-80' 
@@ -35,7 +38,7 @@ const ContactSection = () => {
           </div>
         )
       }
-    </div>
+    </>
   )
 }
 

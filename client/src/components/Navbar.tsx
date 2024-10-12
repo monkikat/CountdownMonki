@@ -19,25 +19,26 @@ const Navbar = () => {
     <>
       <nav className='flex w-full items-center justify-center space-x-32 py-4'>
         <a href='/'
-          className='flex-none font-bold'>
+          className='flex-none font-bold
+            transition hover:scale-105'>
           <img src={Logo} 
             alt='Logo' 
             className='flex h-8' />
-            {/* LOGO */}
         </a>
 
         <div className='flex items-center'>
           <ul className='flex flex-grow font-semibold space-x-2 md:space-x-10 text-primary-700 text-sm'>
-            <li>
+            <li className='transition hover:scale-105'>
               <Link to='/'>Countdown</Link>
             </li>
-            <li>
+            <li className='transition hover:scale-105'>
               <Link to='/demo'>Demo</Link>
             </li>
           </ul>
         </div>
 
-        <button className='flex items-center text-sm text-primary-700 bg-white px-4 py-1 rounded-full shadow-md'
+        <button className='flex items-center text-sm text-primary-700 bg-white px-4 py-1 rounded-full shadow-md
+          transition hover:bg-primary-800 hover:text-white'
           onClick={toggleContactCard}>
           Contact
         </button>
