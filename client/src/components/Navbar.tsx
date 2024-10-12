@@ -1,20 +1,33 @@
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.svg';
 import Divider from './Divider';
+import { useState } from 'react';
+import ContactCard from './ContactCard';
 
 const Navbar = () => {
+  const [showContactCard, setShowContactCard] = useState<boolean>(false);
+
+  const toggleContactCard = () => {
+    setShowContactCard(true);
+  }
+
+  const closeContactCard = () => {
+    setShowContactCard(false);
+  }
+
   return (
     <>
-      <nav className='flex w-full items-center justify-between py-6'>
+      <nav className='flex w-full items-center justify-center space-x-32 py-4'>
         <a href='/'
-           className='flex-none'>
+          className='flex-none font-bold'>
           <img src={Logo} 
             alt='Logo' 
-            className='h-10' />
+            className='flex h-8' />
+            {/* LOGO */}
         </a>
 
         <div className='flex items-center'>
-          <ul className='flex flex-grow space-x-2 md:space-x-20'>
+          <ul className='flex flex-grow font-semibold space-x-2 md:space-x-10 text-primary-700 text-sm'>
             <li>
               <Link to='/'>Countdown</Link>
             </li>
@@ -24,10 +37,22 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <button className='flex items-center'>
+        <button className='flex items-center text-sm text-primary-700 bg-white px-4 py-1 rounded-full shadow-md'
+          onClick={toggleContactCard}>
           Contact
         </button>
       </nav>
+
+      {
+        showContactCard && (
+          <div className='fixed flex h-full items-center justify-center inset-0 bg-primary-900 bg-opacity-80'  //add faded bg
+            onClick={closeContactCard}>
+            <div onClick={(e) => e.stopPropagation()}>
+              <ContactCard/>
+            </div>
+          </div>
+        )
+      }
 
       <Divider/>
     </>

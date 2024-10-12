@@ -1,25 +1,27 @@
-import MainText from "../components/MainText"
 import Timer from "../components/Timer"
 import EditIcon from "../assets/edit.svg"
 import ForwardIcon from "../assets/fastForward.svg"
-import InstructionsSection from "../components/Instructions"
+import InstructionsSection from "../components/InstructionsSection"
+import DemoMainText from "../components/DemoMainText"
 
 const DemoPage = () => {
   return (
-    <div className="flex flex-col h-full justify-between items-center p-10">
-      <MainText/>
-      <div className="flex">
-        <Timer/>
-        <div className="flex flex-col">
-          <img src={EditIcon} 
-            alt='Edit Icon'
-            className="h-4" />
-          <img src={ForwardIcon} 
-            alt='Fast Forward Icon'
-            className="h-4" />
-        </div>
+    <div className="flex flex-col w-full justify-between items-center flex-grow">
+      <DemoMainText/>
+      <Timer/>
+
+      <div className="flex space-x-10">
+        <img src={EditIcon} 
+          alt='Edit Icon'
+          className="h-6" />
+        <img src={ForwardIcon} 
+          alt='Fast Forward Icon'
+          className="h-6" />
       </div>
-      <InstructionsSection/>
+
+      <div className="flex mt-10 mb-20">
+        <InstructionsSection/>
+      </div>
 
     </div>
   )

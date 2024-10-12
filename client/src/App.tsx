@@ -6,7 +6,7 @@ import DemoPage from "./pages/DemoPage"
 function App() {
 
   return (
-    <div className="flex flex-col h-screen w-screen px-32">
+    <div className="flex flex-col h-full w-full">
       <Navbar/>
       <Routes>
         <Route index element = {<CountdownPage/>} />

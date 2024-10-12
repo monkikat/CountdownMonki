@@ -6,10 +6,16 @@ import Timer from "../components/Timer"
 
 const CountdownPage = () => {
   return (
-    <div className="flex flex-col justify-between items-center flex-grow p-10">
+    <div className="flex flex-col w-full justify-between items-center flex-grow">
       <MainText/>
       <Timer/>
-      <div className="flex space-x-20">
+      <p className="text-base text-center text-primary-700 font-semibold">For more information, visit {''}
+            <a
+            href='https://reactsummit.us/'
+            target='_blank'>
+            React Summit
+            </a>.</p>
+      <div className="flex justify-start px-12 space-x-10 mt-20 mb-20">
         <RegisterSection/>
         <DemoSection/>
         <ContactSection/>
