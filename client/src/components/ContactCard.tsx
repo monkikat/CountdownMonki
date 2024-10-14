@@ -80,7 +80,8 @@ const ContactCard = () => {
             required></textarea>
         </div>
 
-        <button type="submit" className="text-lg flex w-fit justify-center px-8 py-2 bg-primary-300 rounded-xl">Send Message</button>
+        <button type="submit" className="text-lg flex w-fit justify-center px-8 py-2 bg-primary-300 rounded-xl
+          transition hover:scale-105">Send Message</button>
       </form>
       
     </div>

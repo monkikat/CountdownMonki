@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.svg';
-import Divider from './Divider';
+// import Divider from './Divider';
 import { useState } from 'react';
 import ContactCard from './ContactCard';
 
@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='flex w-full items-center justify-center space-x-32 py-4'>
+      <nav className='fixed flex w-full items-center justify-center space-x-32 py-4 bg-primary-50'>
         <a href='/'
           className='flex-none font-bold
             transition hover:scale-105'>
@@ -42,6 +42,8 @@ const Navbar = () => {
           onClick={toggleContactCard}>
           Contact
         </button>
+
+        {/* <Divider/> */}
       </nav>
 
       {
@@ -54,8 +56,6 @@ const Navbar = () => {
           </div>
         )
       }
-
-      <Divider/>
     </>
   )
 }
