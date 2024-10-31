@@ -1,8 +1,6 @@
-# CountdownMonki ⏳
+# An Event Countdown Page ⏳
 
-Welcome to CountdownMonki, an event countdown web page built with **React**, **TypeScript**, and **Tailwind CSS** for a responsive and clean user interface, and **Express** with **Nodemailer** for email registration notifications. 
-
-## Preview
+Welcome to CountdownMonki, an event countdown web page built with **React**, **TypeScript**, and **Tailwind CSS** for a responsive and clean user interface, and **Express** with **Nodemailer** for email registration notifications. CountdownMonki currently displays a timer for the [React Summit 2024](https://spacemonki.netlify.app/) event.
 
 ![client/src/assets/landingPageScreenshot.png](https://github.com/monkikat/CountdownMonki/blob/main/client/src/assets/landingPageScreenshot.png)
 
