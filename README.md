@@ -1,7 +1,6 @@
-# CountdownMonki
+# CountdownMonki an event launch countdown page
 
-![Landing Page Screenshot](https://github.com/monkikat/CountdownMonki/blob/main/client/src/assets/landingPageScreenshot.gif)
+![client/src/assets/landingPageScreenshot.png](https://github.com/monkikat/CountdownMonki/blob/main/client/src/assets/landingPageScreenshot.png)
 
-![Video Demo](https://github.com/monkikat/CountdownMonki/blob/main/client/src/assets/demo.gif)
+![client/src/assets/demo.gif](https://github.com/monkikat/CountdownMonki/blob/main/client/src/assets/demo.gif)
 
-![Landing Page Screenshot](https://github.com/monkikat/CountdownMonki/blob/main/client/src/assets/landingPageScreenshot.gif)
